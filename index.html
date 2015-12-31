@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/css_reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/default.css"/>
+</head>
+<body>
+<div class="render">
+    <h2>Bio</h2>
+</div>
+<script src="lib/jquery/jquery-1.8.2.js"></script>
+<script src="lib/jquery/jquery.validate.js"></script>
+<script src="lib/formRenderer.js"></script>
+<script>
+    var form = new formRenderer({
+        name: "myForm",
+        target: ".render",
+        preserveHTML: false,
+        mode: "json", //json or php
+        url: "data/data.json",
+        postURL : "/url/", //if php
+        validation: true, //true or false
+        errorMessageMode: "inline", //alert or div or inline
+        confErrorMessages: {
+            required: "$$fieldName$$ is required",
+            charLim: "$$fieldName$$ has character limit of $$limit$$",
+            date: "Invalid date Format",
+            mail: "Invalid Email Format"
+        },
+        rowStruct : "<div class='labelHolder'>$lab$</div><br><div class='elementHolder'>$ele$</div><br>",
+        beforeRender: function () {
+           console.log("Start");
+        },
+        afterRender: function () {
+            console.log("End");
+        }
+    }).init();
+</script>
+</body>
+</html>

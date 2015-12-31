@@ -1,0 +1,143 @@
+{
+    "formData": [
+        {
+            "tag": "input",
+            "label": "Name",
+            "type": "text",
+            "attr": {
+                "type": "text",
+                "class": "name",
+                "name": "name"
+            },
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "tag": "input",
+            "type": "radio",
+            "attr": {
+                "name": "gender"
+            },
+            "label": "Gender",
+            "data": [
+                {
+                    "label": "Male",
+                    "attr": {
+                        "id": "male",
+                        "value": "Male"
+                    }
+                },
+                {
+                    "label": "Female",
+                    "attr": {
+                        "id": "female",
+                        "value": "Female"
+                    }
+                }
+            ],
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "tag": "textarea",
+            "label": "Address",
+            "type": "text",
+            "attr": {
+                "class": "address",
+                "name": "address"
+            },
+            "validation": "required"
+        },
+        {
+            "tag": "input",
+            "label": "Date of Birth",
+            "type": "date",
+            "attr": {
+                "type": "date",
+                "class": "dob",
+                "name": "dob"
+            },
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "tag": "select",
+            "label": "Choice",
+            "attr": {
+                "name": "Choice"
+            },
+            "options": [
+                {
+                    "name": "-Select-",
+                    "attr": {
+                        "value": "-Select-"
+                    }
+                },
+                {
+                    "name": "choice1",
+                    "attr": {
+                        "value": "choice1"
+                    }
+                },
+                {
+                    "name": "choice2",
+                    "attr": {
+                        "value": "choice2"
+                    }
+                },
+                {
+                    "name": "choice3",
+                    "attr": {
+                        "value": "choice3"
+                    }
+                }
+            ],
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "tag": "input",
+            "label": "Email",
+            "type": "email",
+            "attr": {
+                "type": "email",
+                "class": "email",
+                "name": "email"
+            },
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "tag": "input",
+            "type": "checkBox",
+            "label": "Agree",
+            "data": [
+                {
+                    "label": "I Agree1",
+                    "attr": {
+                        "id": "agree1",
+                        "name": "agree1"
+                    },
+                    "validation": {
+                        "required": true
+                    }
+                },
+                {
+                    "label": "I Agree2",
+                    "attr": {
+                        "id": "agree2",
+                        "name": "agree2"
+                    },
+                    "validation": {
+                        "required": true
+                    }
+                }
+            ]
+        }
+    ]
+}
